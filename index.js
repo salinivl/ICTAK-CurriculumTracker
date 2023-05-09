@@ -23,6 +23,7 @@ app.use(Body_parser.json());
 app.use(Body_parser.urlencoded({ extended: true }));
 app.use(Cors());
 
+Mongoose.set('strictQuery', false);
 Mongoose.connect(
   "mongodb+srv://reachsalinivl:salinivl@cluster0.drrnktt.mongodb.net/CurriculumDB",
   { useNewUrlParser: true }
